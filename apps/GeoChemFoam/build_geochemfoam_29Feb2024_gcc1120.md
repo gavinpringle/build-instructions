@@ -83,6 +83,14 @@ Lastly, create a file named $GCFOAM_DIR/etc/bashrc_archer2 with the following co
    # .bashrc
    source $FOAM_INSTALL_DIR/etc/bashrc
    source $GCFOAM_DIR/ThirdParty/bashrc
+   export ARCHER2=""
+
+# edit the line below which sets GCFOAM_RUNS,
+# replacing y23 with your project code
+# and replace gavingcf with your username
+
+   #export GCFOAM_RUNS=/work/y23/y23/gavingcf/works/GeoChemFoam-5.2/runs
+   export GCFOAM_RUNS=/work/ecseaj02/ecseaj02/gavingcf/works/GeoChemFoam-5.2/runs
    ```
 
 which is required by batch scripts that employ this central installation.
